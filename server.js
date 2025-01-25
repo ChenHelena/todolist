@@ -10,6 +10,7 @@ const requestListener = (req, res) => {
        'Content-Type': 'application/json'
     }
     let body = '';
+    // 組合逐步接收請求的數據塊
     req.on('data', chunk => {
         body+=chunk
     })
